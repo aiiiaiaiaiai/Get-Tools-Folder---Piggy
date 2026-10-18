@@ -30,7 +30,7 @@ for i, x in pairs(game.Workspace:GetDescendants()) do
             if x:IsA("Part") and x.Parent:IsA("Folder") then
                 for i, v in detectablenames do
                     if x.Name == v then
-                        --print("[PiggyFolderDebug] Found potential folder > "..x:GetFullName())
+                        --print("[PiggyFolderDebug] Found potential folder > "..x:GetFullName()) ts prints as many players as there are in your server for some reason please dont use this.
                         getgenv().ToolsFolder = x.Parent.Name
                     end
                 end
